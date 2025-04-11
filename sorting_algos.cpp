@@ -29,6 +29,7 @@ void insertion_sort(int* arr, int n) {
 
     for(int i = 0; i < n; i++) {
         int j = i+1;
+
         while(j >= 1 && arr[j-1] >= arr[j]) {
             std::swap(arr[j], arr[j-1]);
             j--;
@@ -74,9 +75,9 @@ int main() {
     cout << "Before sorting: ";
     printArr(arr, n);
 
-    bubble_sort(arr, n);
+    insertion_sort(arr, n);
 
-    cout << "Before sorting: ";
+    cout << "After sorting: ";
     printArr(arr, n);
 
     return 0;
