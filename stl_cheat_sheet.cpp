@@ -181,7 +181,7 @@ int main() {
     str.find("Hello"); // returns the index of the first occurrence of the substring, if not found returns string::npos
     string::npos; // maximum value for size_t | Also used to indicate no matches
 
-    str.substr(0, 4); // returns -> Hello // returns substring from start to end-1 index  |  [start, end)
+    str.substr(0, 4); // returns -> Hello // returns substring from start and len characters after start | [start, start+len)
     str.substr(2); // returns the substring starting from the given index till the end
 
     std::cout << str.substr(str.find("Hello")); // returns the substring starting from the first occurrence of the substring till the end
